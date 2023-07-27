@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.menu {
+    background-color: gray;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+
+.menu nav ul li:hover {
+    text-decoration: underline;
+}
+
+.menu .menu-active {
+    text-decoration: underline;
+    color: white;
+    font-style: italic;
+}
+
+body {
+    background-color: rgba(0,0,0,0.02);
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.form-info {
+    width: 100%;
+}
+
+
+
+.form-info h3 {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form-info p {
+    position: relative;
+    text-align: center;
+    color: black;
+    padding: 20px 0;
+    margin: 10px 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    background-color: white;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+    padding: 30px 0;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    background-color: white;
+}
+
+input, select {
+    display: flex;
+    justify-content: center;
+    width: 75vw;
+    border: 3px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+
+}
+
+select option{
+    font-size: 10px;
+}
+
+
+textarea {
+    display: flex;
+    justify-content: center;
+    width: 75vw;
+    height: 10vh;
+    border: 3px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+label {
+    display: flex;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.radio-label{
+    position: relative;
+    margin: 0 20px 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 3px solid black;
+}
+
+.radio-label:hover {
+    background-color: rgba(0,0,0,0.25);
+}
+
+input[type="radio"]:checked + .radio-label {
+    background-color: rgba(0,0,0,0.25);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    background-color: rgba(0,0,0,0.25);
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+button:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: transparent;
+}
+
+.footer {
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer a{
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    margin: 0 80px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.space {
+    height: 5vh;
+}
+
+/* Disclaimer */
+.disclaimer{
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    overflow-wrap: break-word;
+    font-size: 12px;
+}
+
+.disclaimer ol li {
+    margin-left: 20px;
+    padding-bottom: 15px;
+}
+
+.disclaimer h3 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+}
+
+.wrapper h3 {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 786px) {
+    .menu nav ul li {
+        margin: 0 75px;
+    }
+
+    .form-info h3 {
+        font-size: 30px;
+    }
+
+    .form-info p {
+       font-size: 19px;
+    }
+
+    label {
+        font-size: 19px;
+    }
+
+    input, select {
+        display: inline-block;
+        width: 45%;
+        font-size: 18px;
+    }
+
+    select option{
+        font-size: 12px;
+    }
+
+    textarea {
+        font-size: 18px;
+    }
+
+    .block-email {
+        margin: 35px 0 35px 0;
+    }
+
+    .radio-group {
+        display: block;
+    }
+
+    .radio-label {
+        display: inline-block;
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    button{
+        font-size: 25px;
+        padding: 5px 80px;
+    }
+
+    .footer a{
+        font-size: 15px;
+        margin: 0 150px;
+    }
+
+    .space {
+        height: 5vh;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    body {
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .form-info h3 {
+        font-size: 25px;
+        margin: 30px 0;
+    }
+
+    .form-info p {
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input, select {
+        font-size: 12px;
+    }
+
+    .radio-group label {
+        font-size: 12px;
+    }
+
+    textarea {
+        font-size: 14px;
+        height: 15vh;
+    }
+
+    select option {
+        font-size: 15px;
+    }
+
+    .block-email {
+        margin: 45px 0 45px 0;
+    }
+
+    .radio-label {
+        width: 19%;
+        margin: 10px 28px 10px 0;
+    }
+
+    button{
+        font-size: 20px;
+        padding: 10px 80px;
+    }
+
+    .footer a{
+        font-size: 15px;
+        margin: 0 500px;
+    }
+
+    /* menu settings */
+
+    .menu nav ul li {
+        margin: 0 115px;
+    }
+
+    .space {
+        height: 15vh;
+    }
+}
+
+
+
+
